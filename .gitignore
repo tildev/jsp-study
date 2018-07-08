@@ -23,7 +23,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-bin/
 
 *.class
 target/
+
+bin/
+META-INF/
