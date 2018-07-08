@@ -31,6 +31,5 @@ public class Round12_01_Servlet extends GenericServlet{
 	public void destroy() {
 		System.out.println("서블릿 파일 데이터 소멸 부분!");
 	}
-
 	
 }
