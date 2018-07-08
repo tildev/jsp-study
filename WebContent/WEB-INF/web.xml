@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>jspstudy</display-name>
+
+	<!-- 서블릿을 웹 컨테이버에 등록 -->
+	<servlet>
+		<servlet-name>My01</servlet-name>
+		<servlet-class>Round12_01_Servlet</servlet-class>
+		<!-- 톰캣 구동될 때 init() 메서드를 실행하고 싶다면 아래 코드 등록 -->
+		<!-- <load-on-startup>1</load-on-startup> -->
+	</servlet>
+
+	<!-- 등록한 서블릿을 웹 브라우저에서 호출하면서 사용하는 이름을 등록 -->
+	<servlet-mapping>
+		<servlet-name>My01</servlet-name>
+		<url-pattern>/Servlet01</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
