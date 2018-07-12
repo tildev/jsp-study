@@ -29,6 +29,10 @@
 		<servlet-name>My05</servlet-name>
 		<servlet-class>Round12_05_Servlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>My06</servlet-name>
+		<servlet-class>Round12_06_Servlet</servlet-class>
+	</servlet>
 
 	<!-- 등록한 서블릿을 웹 브라우저에서 호출하면서 사용하는 이름을 등록 -->
 	<servlet-mapping>
@@ -51,6 +55,10 @@
 	<servlet-mapping>
 		<servlet-name>My05</servlet-name>
 		<url-pattern>/Servlet05</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>My06</servlet-name>
+		<url-pattern>/Servlet06</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>
